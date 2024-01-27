@@ -8,7 +8,7 @@ All the implementations in this repository are available in both Python and C++.
 
 ## Contents
 
-The algorithms in this repository are organized into two separate files: one in Python (`.py`) and another in C++ (`.cpp`). Each file contains a collection of algorithms, ensuring modularity and ease of access.
+The algorithms in this repository are organized into two separate folders: one for CPP algorithms and another for Python algorithms. Each folder contains individual files, each file housing the implementation of a specific algorithm, ensuring modularity and ease of access.
 
 ## How to Use
 
