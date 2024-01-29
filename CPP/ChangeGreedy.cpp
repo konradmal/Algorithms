@@ -14,7 +14,7 @@ vector<int> changeGreedy(int amount, int denominations[], int size_of_array){
     return change;
 }
 
-int main() {
+int main(int argc, char** argv) {
     int denominations[] = {500, 200, 100, 50, 20, 10, 5, 2, 1};
     int size_of_array = sizeof(denominations) / sizeof(denominations[0]);
     vector<int> result = changeGreedy(43, denominations, size_of_array);
