@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int gcd_iterative_unoptimized(int a, int b){
+int gcdIterativeUnoptimized(int a, int b){
     while (a != b){
         if(a > b){
             a -= b;
@@ -14,17 +14,17 @@ int gcd_iterative_unoptimized(int a, int b){
     return a;
 }
 
-int gcd_recursive_unoptimized(int a, int b){
+int gcdRecursiveUnoptimized(int a, int b){
     if (a == b){
         return a;
     }
     if (a > b){
-        return gcd_recursive_unoptimized(a - b, b);
+        return gcdRecursiveUnoptimized(a - b, b);
     }
-    return gcd_recursive_unoptimized(a, b - a);
+    return gcdRecursiveUnoptimized(a, b - a);
 }
 
-int gcd_iterative_optimized(int a, int b){
+int gcdIterativeOptimized(int a, int b){
     while (b){
         int tmp = a;
         a = b;
@@ -33,23 +33,23 @@ int gcd_iterative_optimized(int a, int b){
     return a;
 }
 
-int gcd_recursive_optimized(int a, int b){
+int gcdRecursiveOptimized(int a, int b){
     if (!b){
         return a;
     }
-    return gcd_recursive_optimized(b, a % b);
+    return gcdRecursiveOptimized(b, a % b);
 }
 
 int main(int argc, char** argv) {
-    cout << gcd_iterative_unoptimized(12, 18) << endl;
-    cout << gcd_iterative_unoptimized(32, 28) << endl;
+    cout << gcdIterativeUnoptimized(12, 18) << endl;
+    cout << gcdIterativeUnoptimized(32, 28) << endl;
 
-    cout << gcd_recursive_unoptimized(12, 18) << endl;
-    cout << gcd_recursive_unoptimized(32, 28) << endl;
+    cout << gcdRecursiveUnoptimized(12, 18) << endl;
+    cout << gcdRecursiveUnoptimized(32, 28) << endl;
 
-    cout << gcd_iterative_optimized(12, 18) << endl;
-    cout << gcd_iterative_optimized(32, 28) << endl;
+    cout << gcdIterativeOptimized(12, 18) << endl;
+    cout << gcdIterativeOptimized(32, 28) << endl;
 
-    cout << gcd_recursive_optimized(12, 18) << endl;
-    cout << gcd_recursive_optimized(32, 28) << endl;
+    cout << gcdRecursiveOptimized(12, 18) << endl;
+    cout << gcdRecursiveOptimized(32, 28) << endl;
 }
