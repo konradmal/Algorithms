@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int gcd_iterative_optimized(int a, int b){
+int gcdIterativeOptimized(int a, int b){
     while (b){
         int tmp = a;
         a = b;
@@ -14,16 +14,16 @@ int gcd_iterative_optimized(int a, int b){
     return a;
 }
 
-int gcd_recursive_optimized(int a, int b){
+int gcdRecursiveOptimized(int a, int b){
     if (!b){
         return a;
     }
-    return gcd_recursive_optimized(b, a % b);
+    return gcdRecursiveOptimized(b, a % b);
 }
 
 int lcm_using_gcd(int a, int b){
-    // return a * b / gcd_iterative_optimized(a, b);
-    return a * b / gcd_recursive_optimized(a, b);
+    // return a * b / gcdIterativeOptimized(a, b);
+    return a * b / gcdRecursiveOptimized(a, b);
 }
 
 vector<int> factorizeEfficientVector(int number){
@@ -44,7 +44,7 @@ vector<int> factorizeEfficientVector(int number){
     return factors;
 }
 
-int lcm_using_prime_factors(int a, int b){
+int lcmUsingPrimeFactors(int a, int b){
     vector<int> factors_a = factorizeEfficientVector(a);
     vector<int> factors_b = factorizeEfficientVector(b);
     int count_a, count_b, max_count;
@@ -67,6 +67,6 @@ int main(int argc, char** argv) {
     cout << lcm_using_gcd(12, 18) << endl;
     cout << lcm_using_gcd(32, 28) << endl;
 
-    cout << lcm_using_prime_factors(12, 18) << endl;
-    cout << lcm_using_prime_factors(32, 28) << endl;
+    cout << lcmUsingPrimeFactors(12, 18) << endl;
+    cout << lcmUsingPrimeFactors(32, 28) << endl;
 }
