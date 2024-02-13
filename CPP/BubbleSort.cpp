@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-void bubble_sort(int tab[], int n) {
+void bubbleSort(int tab[], int n) {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n - i - 1; j++)
             if (tab[j] > tab[j + 1])
@@ -15,7 +15,7 @@ int main() {
     for (int i = 0; i < 7; i++)
         cout << tab[i] << ", ";
     cout << endl;
-    bubble_sort(tab, 7);
+    bubbleSort(tab, 7);
     cout << "After sort: ";
     for (int i = 0; i < 7; i++)
         cout << tab[i] << ", ";
