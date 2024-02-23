@@ -13,7 +13,7 @@ bool narcissisticNumber(int number) {
     int numDigits = digits.size();
     int sumOfPowers = 0;
     for (int digit : digits) {
-        sumOfPowers += std::pow(digit, numDigits);
+        sumOfPowers += pow(digit, numDigits);
     }
     return originalNumber == sumOfPowers;
 }
