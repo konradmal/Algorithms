@@ -1,4 +1,4 @@
-def kadane_algorithm(nums):
+def kadane_algorithm(nums: list):
     max_sum = current_sum = nums[0]
     for num in nums[1:]:
         current_sum = max(num, current_sum + num)
