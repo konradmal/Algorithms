@@ -40,7 +40,7 @@ int gcdRecursiveOptimized(int a, int b){
     return gcdRecursiveOptimized(b, a % b);
 }
 
-int main(int argc, char** argv) {
+int main() {
     cout << gcdIterativeUnoptimized(12, 18) << endl;
     cout << gcdIterativeUnoptimized(32, 28) << endl;
 
