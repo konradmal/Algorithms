@@ -44,7 +44,7 @@ int factorialRecursive(int number){
     return number * factorialRecursive(number - 1);
 }
 
-int main(int argc, char** argv) {
+int main() {
 	cout << sumIterative(5) << endl;
 	cout << sumIterative(10) << endl;
 	
