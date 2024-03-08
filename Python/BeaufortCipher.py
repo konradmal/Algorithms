@@ -1,4 +1,4 @@
-def beaufort_cipher(text, k):
+def beaufort_cipher(text: str, k: int) -> str:
     n = len(text)
     ciphertext = ""
     i = 0
