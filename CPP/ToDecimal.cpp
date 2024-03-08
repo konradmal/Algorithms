@@ -2,9 +2,9 @@
 #include <cmath>
 using namespace std;
 
-int toDecimal(const string& number, int base) {
+int toDecimal(string number, int base) {
     int result = 0;
-    for (size_t i = 0, power = number.length() - 1; i < number.length(); i++, power--) {
+    for (int i = 0, power = number.length() - 1; i < number.length(); i++, power--) {
         int digitValue;
         if (number[i] >= '0' && number[i] <= '9') {
             digitValue = number[i] - '0';
