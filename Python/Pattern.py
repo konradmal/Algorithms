@@ -1,7 +1,6 @@
 def contains_pattern(text: str, pattern: str) -> bool:
     return pattern in text
 
-# Przykład użycia
 print(contains_pattern("environment", "men"))
 print(contains_pattern("history", "story"))
 print(contains_pattern("teacher", "each"))
@@ -17,7 +16,6 @@ def contains_pattern_basic(text: str, pattern: str) -> bool:
             return True
     return False
 
-# Przykład użycia
 print(contains_pattern_basic("environment", "men"))
 print(contains_pattern_basic("history", "story"))
 print(contains_pattern_basic("teacher", "each"))
