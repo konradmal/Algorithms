@@ -54,7 +54,7 @@ vector<int> sieveOfEratosthenesList(int start, int end){
     return primeList;
 }
 
-int main(int argc, char** argv) {
+int main() {
     sieveOfEratosthenes(20, 353);
 
     vector<int> sieveResult;

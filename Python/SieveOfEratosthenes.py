@@ -1,4 +1,4 @@
-def sieve_of_eratosthenes(start: int, end: int):
+def sieve_of_eratosthenes(start: int, end: int) -> None:
     primes = (end + 1) * [True]
     primes[0] = primes[1] = False
     for i in range(2, int(end**0.5) + 1):
