@@ -1,4 +1,4 @@
-def decimal_to_factorial(decimal_number):
+def decimal_to_factorial(decimal_number: int) -> str:
     factorial = 1
     index = 1
     while factorial * (index + 1) <= decimal_number:
