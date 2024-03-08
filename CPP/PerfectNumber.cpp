@@ -23,7 +23,7 @@ bool isPerfectNumber(int number){
     return false;
 }
 
-int main(int argc, char** argv) {
+int main() {
     cout << isPerfectNumber(6) << endl; //1+2+3
     cout << isPerfectNumber(28) << endl; //1+2+4+7+14
     cout << isPerfectNumber(12) << endl;

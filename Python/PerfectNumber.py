@@ -5,8 +5,9 @@ def is_perfect_number(number: int) -> bool:
     for divisor in range(2, int(number ** 0.5) + 1):
         if number % divisor == 0:
             sum_of_divisors += divisor
-            if number != divisor * divisor:
-                sum_of_divisors += number // divisor
+            sum_of_divisors += number // divisor
+        if number == divisor * divisor:
+            sum_of_divisors -= divisor
     if sum_of_divisors == number:
         return True
     return False
