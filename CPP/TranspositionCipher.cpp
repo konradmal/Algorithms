@@ -2,14 +2,14 @@
 #include <string>
 using namespace std;
 
-string transpositionCipher(string word) {
+string transpositionCipher(string text) {
     string swapped = "";
-    for (int i = 0; i < word.length() - 1; i += 2) {
-        swapped += word[i + 1];
-        swapped += word[i];
+    for (int i = 0; i < text.length() - 1; i += 2) {
+        swapped += text[i + 1];
+        swapped += text[i];
     }
-    if (word.length() % 2 != 0) {
-        swapped += word[word.length() - 1];
+    if (text.length() % 2 != 0) {
+        swapped += text[text.length() - 1];
     }
     return swapped;
 }
