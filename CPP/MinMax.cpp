@@ -15,7 +15,7 @@ void minMax(int array[], int length, int& minVal, int& maxVal) {
     }
 }
 
-int main(int argc, char** argv) {
+int main() {
 	int tab[] = {22, 34, 12, 9, 55, 33, 23};
 	int MIN, MAX;
     int size_of_array = sizeof(tab) / sizeof(tab[0]);
