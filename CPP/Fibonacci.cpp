@@ -27,7 +27,7 @@ int fibonacciRecursive(int n){
 	return fibonacciRecursive(n-1) + fibonacciRecursive(n-2);
 }
 
-int main(int argc, char** argv) {
+int main() {
 	cout << fibonacciIterative(10) << endl;
 	cout << fibonacciIterative(33) << endl;
 	cout << fibonacciIterative(34) << endl;
