@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Prime number
 bool isPrime(int number){
     if (number <= 1){
         return false;
@@ -46,7 +45,7 @@ bool isPrimeMoreOptimized(int number){
     return true;
 }
 
-int main(int argc, char** argv) {
+int main() {
     cout << isPrime(13) << endl;
     cout << isPrime(23) << endl;
     cout << isPrime(27) << endl;
