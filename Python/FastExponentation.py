@@ -1,4 +1,4 @@
-def fast_exponentiation_iter(base: int, exponent: int) -> int:
+def fast_exponentiation_iterative(base: int, exponent: int) -> int:
     result = 1
     while exponent:
         if exponent % 2 == 1:
@@ -7,8 +7,8 @@ def fast_exponentiation_iter(base: int, exponent: int) -> int:
         base *= base
     return result
 
-print(fast_exponentiation_iter(2, 10))
-print(fast_exponentiation_iter(3, 5))
+print(fast_exponentiation_iterative(2, 10))
+print(fast_exponentiation_iterative(3, 5))
 
 def fast_exponentiation_iter_with_bin(base: int, exponent: int) -> int:
     result = base
