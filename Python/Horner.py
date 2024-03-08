@@ -6,11 +6,11 @@ def horner_iterative(coeffs: list, x_value: float) -> float:
 
 print(horner_iterative([3, 3, -2, 11], 2.5))
 
-def horner_recursive(coeffs: list, x_value: float, degree: int = None) -> float:
+def horner_recursive(coeffs: list, x: float, degree: int = None) -> float:
     if degree is None:
         degree = len(coeffs) - 1
     if degree == 0:
         return coeffs[0]
-    return x_value * horner_recursive(coeffs, x_value, degree - 1) + coeffs[degree]
+    return x * horner_recursive(coeffs, x, degree - 1) + coeffs[degree]
 
 print(horner_recursive([3, 3, -2, 11], 2.5))
