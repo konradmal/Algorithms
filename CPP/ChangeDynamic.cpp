@@ -32,7 +32,7 @@ vector<int> changeDynamic(int amount, int coins[], int num_coins) {
     return change;
 }
 
-int main(int argc, char** argv) {
+int main() {
     int denominations[] = {20, 19, 19};
     int size_of_array = sizeof(denominations) / sizeof(denominations[0]);
     vector<int> result = changeDynamic(58, denominations, size_of_array);
