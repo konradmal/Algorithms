@@ -1,11 +1,11 @@
 #include <iostream>
 #include <stack>
-#include <sstream>  // Dla std::istringstream
+#include <sstream>
 #include <string>
 
 using namespace std;
 
-int evaluatePostfix(const string& expression) {
+int evaluatePostfix(string expression) {
     stack<int> stack;
     istringstream iss(expression);
     string token;

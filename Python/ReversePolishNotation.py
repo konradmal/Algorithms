@@ -1,4 +1,4 @@
-def reverse_polish_notation(expression):
+def reverse_polish_notation(expression: str) -> int:
     stack = []
     tokens = expression.split()
     
