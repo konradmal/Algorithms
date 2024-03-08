@@ -137,7 +137,7 @@ vector<int> factorizeUsingSieve(int number){
     return factors;
 }
 
-int main(int argc, char** argv) {
+int main() {
     factorizeBasic(24);
     factorizeBasic(40);
     factorizeBasic(120);
