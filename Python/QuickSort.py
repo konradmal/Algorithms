@@ -1,4 +1,4 @@
-def partition(tab, l, p):
+def partition(tab: list, l: int, p: int) -> int:
     pivot = tab[p]
     i = l - 1
     for j in range(l, p):
@@ -8,7 +8,7 @@ def partition(tab, l, p):
     tab[i+1], tab[p] = tab[p], tab[i+1]
     return i + 1
 
-def quick_sort(tab, l, p):
+def quick_sort(tab: list, l: int, p: int):
     if l < p:
         pivot = partition(tab, l, p)
         quick_sort(tab, l, pivot-1)
