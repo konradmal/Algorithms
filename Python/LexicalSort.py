@@ -6,7 +6,7 @@ class Student:
     def display_info(self):
         print(f"{self.surname} : {self.average_grade}")
 
-def sort_students_lexically(students):
+def sort_students_lexically(students: list) -> None:
     count = len(students)
     for i in range(count):
         for j in range(count - i - 1):
