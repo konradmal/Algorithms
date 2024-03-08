@@ -12,7 +12,7 @@ def is_perfect_number(number: int) -> bool:
         return True
     return False
 
-print(is_perfect_number(6)) # 1+2+3 = 6
-print(is_perfect_number(28)) # 1+2+4+7+14 = 28
+print(is_perfect_number(6)) # 1+2+3=6
+print(is_perfect_number(28)) # 1+2+4+7+14=28
 print(is_perfect_number(12))
 print(is_perfect_number(25))

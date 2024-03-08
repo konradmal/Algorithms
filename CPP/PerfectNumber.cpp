@@ -24,8 +24,8 @@ bool isPerfectNumber(int number){
 }
 
 int main() {
-    cout << isPerfectNumber(6) << endl; //1+2+3
-    cout << isPerfectNumber(28) << endl; //1+2+4+7+14
+    cout << isPerfectNumber(6) << endl; //1+2+3=6
+    cout << isPerfectNumber(28) << endl; //1+2+4+7+14=28
     cout << isPerfectNumber(12) << endl;
     cout << isPerfectNumber(25) << endl;
 }
