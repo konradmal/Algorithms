@@ -1,23 +1,30 @@
 #include <iostream>
 #include <stack>
-#include <sstream>
 #include <string>
+#include <cctype>
 
 using namespace std;
 
-int evaluatePostfix(string expression) {
+int reversePolishNotation(string expression) {
     stack<int> stack;
-    istringstream iss(expression);
     string token;
-    while (iss >> token) {
-        if (isdigit(token[0]))
-            stack.push(stoi(token));
-        else {
-            int right = stack.top(); 
+    for (size_t i = 0; i < expression.length(); i++) {
+        if (expression[i] == ' ')
+            continue;
+        if (isdigit(expression[i])) {
+            int num = 0;
+            while (i < expression.length() && isdigit(expression[i])) {
+                num = num * 10 + (expression[i] - '0');
+                i++;
+            }
+            i--;
+            stack.push(num);
+        } else if (expression[i] != ' ') {
+            int right = stack.top();
             stack.pop();
-            int left = stack.top(); 
+            int left = stack.top();
             stack.pop();
-            switch (token[0]) {
+            switch (expression[i]) {
                 case '+': stack.push(left + right); break;
                 case '-': stack.push(left - right); break;
                 case '*': stack.push(left * right); break;
@@ -29,10 +36,7 @@ int evaluatePostfix(string expression) {
 }
 
 int main() {
-    string expression = "5 3 + 18 12 - *";
-    cout << "Postfix: " << expression << endl;
-    cout << "Result: " << evaluatePostfix(expression) << endl;
-    expression = "5 3 7 - 2 * 3 5 1 + * - * 3 -";
-    cout << "Postfix: " << expression << endl;
-    cout << "Result: " << evaluatePostfix(expression) << endl;
+    string expression = "3 4 + 2 * 7 /";
+    int result = reversePolishNotation(expression);
+    cout << "Result: " << result << endl;
 }
