@@ -7,8 +7,7 @@ using namespace std;
 
 int reversePolishNotation(string expression) {
     stack<int> stack;
-    string token;
-    for (size_t i = 0; i < expression.length(); i++) {
+    for (int i = 0; i < expression.length(); i++) {
         if (expression[i] == ' ')
             continue;
         if (isdigit(expression[i])) {
