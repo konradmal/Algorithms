@@ -15,7 +15,7 @@ def reverse_polish_notation(expression: str) -> int:
             elif token == '*':
                 stack.append(left * right)
             elif token == '/':
-                stack.append(left / right)
+                stack.append(left // right)
     
     return stack[0]
 
