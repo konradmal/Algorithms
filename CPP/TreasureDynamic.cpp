@@ -50,5 +50,4 @@ int main() {
     int n = 6;
     int maxSum = treasureDynamic(m, n);
     cout << endl << "Max sum: " << maxSum << endl;
-    return 0;
 }
