@@ -1,4 +1,4 @@
-def decimal_to_binary_fraction(fraction, limit):
+def decimal_to_binary_fraction(fraction: float, limit: int) -> str:
     binary_fractional_part = "0."
     while fraction > 0 and limit > 0:
         fraction *= 2
