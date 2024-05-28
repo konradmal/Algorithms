@@ -1,4 +1,4 @@
-def convert_to_binary_fraction(fraction, limit):
+def decimal_to_binary_fraction(fraction, limit):
     binary_fractional_part = "0."
     while fraction > 0 and limit > 0:
         fraction *= 2
@@ -11,5 +11,5 @@ def convert_to_binary_fraction(fraction, limit):
     return binary_fractional_part
 
 fraction = 0.8
-binary_number = convert_to_binary_fraction(fraction, 10)
+binary_number = decimal_to_binary_fraction(fraction, 10)
 print(binary_number)
