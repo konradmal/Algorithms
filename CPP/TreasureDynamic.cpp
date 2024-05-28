@@ -22,7 +22,7 @@ vector<vector<int>> generateTreasureMap(int m, int n) {
 int treasureDynamic(int m, int n) {
     vector<vector<int>> board = generateTreasureMap(m, n);
     
-    cout << "Generated board:\n";
+    cout << "Generated board:" << endl;
     for (const vector<int>& row : board) {
         for (int cell : row) {
             cout << cell << " ";
