@@ -10,7 +10,7 @@ void selectionSort(int tab[], int n) {
                 mini = j;
             }
         }
-        std::swap(tab[i], tab[mini]);
+        swap(tab[i], tab[mini]);
     }
 }
 
