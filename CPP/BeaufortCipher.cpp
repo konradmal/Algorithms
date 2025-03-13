@@ -5,7 +5,7 @@ using namespace std;
 string beaufortCipher(string text, int k) {
     int n = text.length();
     string ciphertext = "";
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
         ciphertext += (90 - text[i] + k) % 26 + 65;
         k += (i + 1);
     }
