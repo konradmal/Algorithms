@@ -31,10 +31,8 @@ string decimalToBinaryFractionRecursive(double fraction, int limit, string binar
 }
 
 int main() {
-    double fraction = 0.8;
-    int limit = 10;
-    string binary_number = decimalToBinaryFraction(fraction, limit);
+    string binary_number = decimalToBinaryFraction(0.8, 10);
     cout << binary_number << endl;
-    string binary_number_recursive = decimalToBinaryFractionRecursive(fraction, limit);
+    string binary_number_recursive = decimalToBinaryFractionRecursive(0.8, 10);
     cout << binary_number_recursive << endl;
 }

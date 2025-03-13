@@ -10,6 +10,9 @@ def decimal_to_binary_fraction(fraction: float, limit: int) -> str:
         limit -= 1
     return binary_fractional_part
 
+binary_number = decimal_to_binary_fraction(0.8, 10)
+print(binary_number)
+
 def decimal_to_binary_fraction_recursive(fraction: float, limit: int, binary_fractional_part: str = "0.") -> str:
     if limit == 0 or fraction == 0.0:
         return binary_fractional_part
@@ -20,9 +23,5 @@ def decimal_to_binary_fraction_recursive(fraction: float, limit: int, binary_fra
     else:
         return decimal_to_binary_fraction_recursive(fraction, limit - 1, binary_fractional_part + "0")
 
-fraction = 0.8
-limit = 10
-binary_number = decimal_to_binary_fraction(fraction, limit)
-print(binary_number)
-binary_number_recursive = decimal_to_binary_fraction(fraction, limit)
+binary_number_recursive = decimal_to_binary_fraction_recursive(0.8, 10)
 print(binary_number_recursive)
