@@ -45,6 +45,25 @@ bool isPrimeMoreOptimized(int number){
     return true;
 }
 
+bool isPrimeRecursive(int number, int divisor = 3) {
+    if (number <= 1) {
+        return false;
+    }
+    if (number == 2) {
+        return true;
+    }
+    if (number % 2 == 0) {
+        return false;
+    }
+    if (divisor > sqrt(number)) {
+        return true;
+    }
+    if (number % divisor == 0) {
+        return false;
+    }
+    return isPrimeRecursive(number, divisor + 2);
+}
+
 int main() {
     cout << isPrime(13) << endl;
     cout << isPrime(23) << endl;
@@ -57,4 +76,8 @@ int main() {
     cout << isPrimeMoreOptimized(13) << endl;
     cout << isPrimeMoreOptimized(23) << endl;
     cout << isPrimeMoreOptimized(27) << endl;
+
+    cout << isPrimeRecursive(13) << endl;
+    cout << isPrimeRecursive(23) << endl;
+    cout << isPrimeRecursive(27) << endl;
 }
