@@ -19,9 +19,26 @@ int sumDigits(int number) {
     return sum;
 }
 
+int countDigitsRecursive(int number) {
+    if (number == 0)
+        return 0;
+    return 1 + countDigitsRecursive(number / 10);
+}
+
+int sumDigitsRecursive(int number) {
+    if (number == 0)
+        return 0;
+    return (number % 10) + sumDigitsRecursive(number / 10);
+}
+
 int main() {
     cout << countDigits(12345) << endl;
     cout << countDigits(65432) << endl;
     cout << sumDigits(12345) << endl;
     cout << sumDigits(65432) << endl;
+
+    cout << countDigitsRecursive(12345) << endl;
+    cout << countDigitsRecursive(65432) << endl;
+    cout << sumDigitsRecursive(12345) << endl;
+    cout << sumDigitsRecursive(65432) << endl;
 }
