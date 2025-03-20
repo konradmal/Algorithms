@@ -16,3 +16,17 @@ print(to_decimal("123", 4))
 print(to_decimal("33", 6))
 print(to_decimal("EA", 16))
 print(to_decimal("ea", 16))
+
+def to_decimal_int(number: int, base: int) -> int:
+    result = 0
+    power = 0
+    while number > 0:
+        digit = number % 10
+        result += digit * (base ** power)
+        number //= 10
+        power += 1
+    return result
+
+print(to_decimal_int(10101010, 2))
+print(to_decimal_int(123, 4))
+print(to_decimal_int(33, 6))
