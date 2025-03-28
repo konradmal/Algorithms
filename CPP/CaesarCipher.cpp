@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//O(n)
 string caesarCipher(string text, int key) {
     string result = "";
     for (int i = 0; i < text.length(); i++) {
@@ -19,6 +20,7 @@ string caesarCipher(string text, int key) {
     return result;
 }
 
+//O(n)
 string caesarDecipher(string text, int key) {
     return caesarCipher(text, -key);
 }

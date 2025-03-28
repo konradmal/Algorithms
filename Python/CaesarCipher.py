@@ -1,3 +1,4 @@
+#O(n)
 def caesar_cipher(text: str, key: int) -> str:
     result = ""
     for char in text:
@@ -14,6 +15,7 @@ print(caesar_cipher("ABCXYZabcxyz Cat!Dog^Mouse.", -29))
 print(caesar_cipher("ABCXYZabcxyz Cat!Dog^Mouse.", 3))
 print(caesar_cipher("ABCXYZabcxyz Cat!Dog^Mouse.", 29))
 
+#O(n)
 def caesar_decipher(text: str, key: int) -> str:
     return caesar_cipher(text, -key)
 
