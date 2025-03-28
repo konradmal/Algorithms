@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//O(amount * num_coins)
 vector<int> changeDynamic(int amount, int coins[], int num_coins) {
     vector<int> min_coins(amount + 1, amount + 2);
     vector<int> last_coin_used(amount + 1, -1);
@@ -33,7 +34,7 @@ vector<int> changeDynamic(int amount, int coins[], int num_coins) {
 }
 
 int main() {
-    int denominations[] = {20, 19, 19};
+    int denominations[] = {20, 19, 1};
     int size_of_array = sizeof(denominations) / sizeof(denominations[0]);
     vector<int> result = changeDynamic(58, denominations, size_of_array);
     for(int denomination : result){

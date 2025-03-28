@@ -1,8 +1,11 @@
+#//O(amount * len(denominations))
 def change_dynamic(amount: int, denominations: list) -> list:
     min_coins = [amount + 2] * (amount + 1)
     last_denom = [-1] * (amount + 1)
+    
     min_coins[0] = 0
     last_denom[0] = 0
+    
     for i in range(1, amount + 1):
         for j, denom in enumerate(denominations):
             if denom <= i and min_coins[i - denom] + 1 < min_coins[i]:
