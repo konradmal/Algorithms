@@ -1,3 +1,4 @@
+#O(n^2)
 def bubble_sort(tab: list) -> None:
     for i in range(len(tab)):
         for j in range(len(tab) - i - 1):
