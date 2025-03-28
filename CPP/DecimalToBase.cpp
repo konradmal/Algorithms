@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//O(logn)
 string decimalToBaseIter(int number, int base) {
     string result = "";
     while (number > 0) {
@@ -15,12 +16,19 @@ string decimalToBaseIter(int number, int base) {
     return result.empty() ? "0" : result;
 }
 
+//O(logn)
 string decimalToBaseRecur(int number, int base) {
     if (number == 0) {
         return "";
     }
     int remainder = number % base;
-    char digit = (remainder > 9) ? (remainder - 10 + 'A') : (remainder + '0');
+    char digit;
+    if (remainder <= 9){
+        digit = remainder + '0';
+    }
+    else{
+        digit = remainder - 10 + 'A';
+    }
     return decimalToBaseRecur(number / base, base) + digit;
 }
 
