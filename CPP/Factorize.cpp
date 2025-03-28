@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//O(n)
 void factorizeBasic(int number){
     int factor = 2;
     while(number != 1){
@@ -16,6 +17,7 @@ void factorizeBasic(int number){
     cout << endl;
 }
 
+//O(n)
 vector<int> factorizeBasicVector(int number){
     vector<int> factors;
     int factor = 2;
@@ -29,6 +31,7 @@ vector<int> factorizeBasicVector(int number){
     return factors;
 }
 
+//O(n)
 void factorizeOptimized(int number){
     while(number % 2 == 0){
         number /= 2;
@@ -45,6 +48,7 @@ void factorizeOptimized(int number){
     cout << endl;
 }
 
+//O(n)
 vector<int> factorizeOptimizedVector(int number){
     vector<int> factors;
     while(number % 2 == 0){
@@ -62,6 +66,7 @@ vector<int> factorizeOptimizedVector(int number){
     return factors;
 }
 
+//O(sqrt(n))
 void factorizeEfficient(int number){
     while (number % 2 == 0){
         cout << 2 << ", ";
@@ -79,6 +84,7 @@ void factorizeEfficient(int number){
     cout << endl;
 }
 
+//O(sqrt(n))
 vector<int> factorizeEfficientVector(int number){
     vector<int> factors;
     while (number % 2 == 0){
@@ -97,6 +103,7 @@ vector<int> factorizeEfficientVector(int number){
     return factors;
 }
 
+//(nlogn)
 vector<int> sieveOfEratosthenesList(int start, int end){
     vector<int> primeList;    
     bool *primes = new bool[end + 1];
@@ -123,6 +130,7 @@ vector<int> sieveOfEratosthenesList(int start, int end){
     return primeList;
 }
 
+//(nlogn)
 vector<int> factorizeUsingSieve(int number){
     vector<int> primes = sieveOfEratosthenesList(2, number);
     vector<int> factors;
@@ -145,8 +153,20 @@ int main() {
 
     vector<int> factors1;
     factors1 = factorizeBasicVector(24);
+    for(int i = 0; i < factors1.size(); i++){
+        cout << factors1[i] << ", ";
+    }
+    cout << endl;
     factors1 = factorizeBasicVector(40);
+    for(int i = 0; i < factors1.size(); i++){
+        cout << factors1[i] << ", ";
+    }
+    cout << endl;
     factors1 = factorizeBasicVector(120);
+    for(int i = 0; i < factors1.size(); i++){
+        cout << factors1[i] << ", ";
+    }
+    cout << endl;
     factors1 = factorizeBasicVector(132);
     for(int i = 0; i < factors1.size(); i++){
         cout << factors1[i] << ", ";
@@ -160,8 +180,20 @@ int main() {
 
     vector<int> factors2;
     factors2 = factorizeOptimizedVector(24);
+    for(int i = 0; i < factors2.size(); i++){
+        cout << factors2[i] << ", ";
+    }
+    cout << endl;
     factors2 = factorizeOptimizedVector(40);
+    for(int i = 0; i < factors2.size(); i++){
+        cout << factors2[i] << ", ";
+    }
+    cout << endl;
     factors2 = factorizeOptimizedVector(120);
+    for(int i = 0; i < factors2.size(); i++){
+        cout << factors2[i] << ", ";
+    }
+    cout << endl;
     factors2 = factorizeOptimizedVector(132);
     for(int i = 0; i < factors2.size(); i++){
         cout << factors2[i] << ", ";
@@ -175,8 +207,20 @@ int main() {
 
     vector<int> factors3;
     factors3 = factorizeEfficientVector(24);
+    for(int i = 0; i < factors3.size(); i++){
+        cout << factors3[i] << ", ";
+    }
+    cout << endl;
     factors3 = factorizeEfficientVector(40);
+    for(int i = 0; i < factors3.size(); i++){
+        cout << factors3[i] << ", ";
+    }
+    cout << endl;
     factors3 = factorizeEfficientVector(120);
+    for(int i = 0; i < factors3.size(); i++){
+        cout << factors3[i] << ", ";
+    }
+    cout << endl;
     factors3 = factorizeEfficientVector(132);
     for(int i = 0; i < factors3.size(); i++){
         cout << factors3[i] << ", ";
@@ -185,8 +229,20 @@ int main() {
 
     vector<int> factors4;
     factors4 = factorizeUsingSieve(24);
+    for(int i = 0; i < factors4.size(); i++){
+        cout << factors4[i] << ", ";
+    }
+    cout << endl;
     factors4 = factorizeUsingSieve(40);
+    for(int i = 0; i < factors4.size(); i++){
+        cout << factors4[i] << ", ";
+    }
+    cout << endl;
     factors4 = factorizeUsingSieve(120);
+    for(int i = 0; i < factors4.size(); i++){
+        cout << factors4[i] << ", ";
+    }
+    cout << endl;
     factors4 = factorizeUsingSieve(132);
     for(int i = 0; i < factors4.size(); i++){
         cout << factors4[i] << ", ";

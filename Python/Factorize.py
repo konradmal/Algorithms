@@ -1,3 +1,4 @@
+#O(n)
 def factorize_basic(number: int):
     factor = 2
     while number != 1:
@@ -12,6 +13,7 @@ factorize_basic(40)
 factorize_basic(120)
 factorize_basic(132)
 
+#O(n)
 def factorize_basic_list(number: int) -> list:
     factor = 2
     factors = []
@@ -27,6 +29,7 @@ print(factorize_basic_list(40))
 print(factorize_basic_list(120))
 print(factorize_basic_list(132))
 
+#O(n)
 def factorize_optimized(number: int):
     while number % 2 == 0:
         number //= 2
@@ -44,6 +47,7 @@ factorize_optimized(40)
 factorize_optimized(120)
 factorize_optimized(132)
 
+#O(n)
 def factorize_optimized_list(number: int) -> list:
     factors = []
     while number % 2 == 0:
@@ -62,6 +66,7 @@ print(factorize_optimized_list(40))
 print(factorize_optimized_list(120))
 print(factorize_optimized_list(132))
 
+#O(sqrt(n))
 def factorize_efficient(number: int):
     while number % 2 == 0:
         print(2, end=", ")
@@ -81,6 +86,7 @@ factorize_efficient(40)
 factorize_efficient(120)
 factorize_efficient(132)
 
+#O(sqrt(n))
 def factorize_efficient_list(number: int) -> list:
     factors = []
     while number % 2 == 0:
@@ -101,6 +107,7 @@ print(factorize_efficient_list(40))
 print(factorize_efficient_list(120))
 print(factorize_efficient_list(132))
 
+#(nlogn)
 def sieve_of_eratosthenes_list(start: int, end: int) -> list:
     prime_list = []
     primes = (end + 1) * [True]
@@ -116,6 +123,7 @@ def sieve_of_eratosthenes_list(start: int, end: int) -> list:
             prime_list.append(i)
     return prime_list
 
+#(nlogn)
 def factorize_using_sieve(number: int) -> list:
     primes = sieve_of_eratosthenes_list(2, number)
     prime_index = 0
