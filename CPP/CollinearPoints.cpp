@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
+//O(1)
 bool collinearPoints(double x1, double y1, double x2, double y2, double x3, double y3) {
     double area = x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2);
-
     return area == 0.0;
 }
 
