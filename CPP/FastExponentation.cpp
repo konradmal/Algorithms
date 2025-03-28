@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(logn)
 int fastExponentiationIterative(int base, int exponent) {
     int result = 1;
     while (exponent > 0) {
@@ -14,6 +15,7 @@ int fastExponentiationIterative(int base, int exponent) {
     return result;
 }
 
+//O(logn)
 int fastExponentiationRecursive(int base, int exponent) {
     if (exponent == 0) {
         return 1;

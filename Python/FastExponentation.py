@@ -1,3 +1,4 @@
+#O(logn)
 def fast_exponentiation_iterative(base: int, exponent: int) -> int:
     result = 1
     while exponent:
@@ -10,6 +11,7 @@ def fast_exponentiation_iterative(base: int, exponent: int) -> int:
 print(fast_exponentiation_iterative(2, 10))
 print(fast_exponentiation_iterative(3, 5))
 
+#O(logn)
 def fast_exponentiation_iter_with_bin(base: int, exponent: int) -> int:
     result = base
     multiplier = base
@@ -23,6 +25,7 @@ def fast_exponentiation_iter_with_bin(base: int, exponent: int) -> int:
 print(fast_exponentiation_iter_with_bin(2, 10))
 print(fast_exponentiation_iter_with_bin(3, 5))
 
+#O(logn)
 def fast_exponentiation_recursive(base: int, exponent: int) -> int:
     if exponent == 0:
         return 1
