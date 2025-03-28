@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//O(n)
 string beaufortCipher(string text, int k) {
     int n = text.length();
     string ciphertext = "";
