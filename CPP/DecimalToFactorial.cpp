@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+//O(n)
 string decimalToFactorial(int decimal_number) {
     int factorial = 1;
     int index = 1;
@@ -14,8 +15,7 @@ string decimalToFactorial(int decimal_number) {
         int digit = decimal_number / factorial;
         factorial_representation += to_string(digit);
         decimal_number %= factorial;
-        factorial /= index;
-        index -= 1;
+        factorial /= index--;
     }
     return factorial_representation;
 }

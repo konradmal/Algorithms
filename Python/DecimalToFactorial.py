@@ -1,3 +1,4 @@
+#O(n)
 def decimal_to_factorial(decimal_number: int) -> str:
     factorial = 1
     index = 1
