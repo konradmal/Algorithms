@@ -1,3 +1,4 @@
+#O(logn)
 def binary_search_iterative(arr: list, target: float) -> int:
     left = 0
     right = len(arr) - 1
@@ -15,6 +16,7 @@ print(binary_search_iterative([2.2, 3.3, 4.5, 4.7, 5.11, 5.55, 6.12, 6.7, 7.5, 8
 print(binary_search_iterative([2.2, 3.3, 4.5, 4.7, 5.11, 5.55, 6.12, 6.7, 7.5, 8.1], 5.55))
 print(binary_search_iterative([2.2, 3.3, 4.5, 4.7, 5.11, 5.55, 6.12, 6.7, 7.5, 8.1], 2.5))
 
+#O(logn)
 def binary_search_recursive(arr: list, target: float, left: int, right: int) -> int:
     if left > right:
         return -1

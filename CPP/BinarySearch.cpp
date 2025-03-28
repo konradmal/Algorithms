@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(logn)
 int binarySearchIterative(double arr[], int size, double target) {
     int left = 0;
     int right = size - 1;
@@ -20,6 +21,7 @@ int binarySearchIterative(double arr[], int size, double target) {
     return -1;
 }
 
+//O(logn)
 int binarySearchRecursive(double arr[], int size, double target, int left, int right) {
     if (left > right) {
         return -1;
