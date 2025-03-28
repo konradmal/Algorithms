@@ -1,4 +1,4 @@
-#//O(amount * len(denominations))
+#O(amount * len(denominations))
 def change_dynamic(amount: int, denominations: list) -> list:
     min_coins = [amount + 2] * (amount + 1)
     last_denom = [-1] * (amount + 1)
