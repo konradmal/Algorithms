@@ -4,7 +4,7 @@ using namespace std;
 
 //O(1)
 double f(double x){
-    return 2*x*x*x-2*x-8;	//1.7963
+    return 2*x*x*x-2*x-8;    //1.7963
 }
 
 //(logn)
