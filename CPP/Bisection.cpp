@@ -4,7 +4,7 @@ using namespace std;
 
 //O(1)
 double f(double x){
-	return 2*x*x*x-2*x-8;	//1.7963
+    return 2*x*x*x-2*x-8;	//1.7963
 }
 
 //(logn)
@@ -42,6 +42,6 @@ double bisectionMethodRecursive(double start, double end, double tolerance) {
 }
 
 int main() {
-	cout << bisectionMethodIterative(0, 5, 0.0001) << endl;
-	cout << bisectionMethodRecursive(0, 5, 0.0001) << endl;
+    cout << bisectionMethodIterative(0, 5, 0.0001) << endl;
+    cout << bisectionMethodRecursive(0, 5, 0.0001) << endl;
 }
