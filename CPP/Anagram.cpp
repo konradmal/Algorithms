@@ -3,12 +3,14 @@
 
 using namespace std;
 
+//O(nlogn)
 bool isAnagram(string str1, string str2){
     sort(str1.begin(), str1.end());
     sort(str2.begin(), str2.end());
     return str1 == str2;
 }
 
+//O(n^2)
 string bubbleSortString(string str){
     for(int i = 0; i < str.length(); i++){
         for(int j = 0; j < str.length() - 1 - i; j++){
@@ -20,10 +22,12 @@ string bubbleSortString(string str){
     return str;
 }
 
+//O(n^2)
 bool isAnagramBubbleSort(string str1, string str2){    
     return bubbleSortString(str1) == bubbleSortString(str2);
 }
 
+//O(n)
 bool isAnagramCount(string str1, string str2){
     int length1 = str1.length();
     int length2 = str2.length();
