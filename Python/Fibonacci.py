@@ -1,3 +1,4 @@
+#O(n)
 def fibonacci_iterative(n: int) -> int:
     if n <= -1:
         return -1
@@ -12,6 +13,7 @@ print(fibonacci_iterative(10))
 print(fibonacci_iterative(33))
 print(fibonacci_iterative(34))
 
+#(2^n)
 def fibonacci_recursive(n: int) -> int:
     if n <= -1:
         return -1

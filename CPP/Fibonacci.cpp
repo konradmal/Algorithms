@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n)
 int fibonacciIterative(int n){
     if (n <= -1){
         return -1;
@@ -19,6 +20,7 @@ int fibonacciIterative(int n){
 	return a;
 }
 
+//O(2^n)
 int fibonacciRecursive(int n){
     if (n <= -1){
 		return -1;
