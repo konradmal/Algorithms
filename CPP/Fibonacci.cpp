@@ -6,7 +6,7 @@ using namespace std;
 int fibonacciIterative(int n){
     if (n <= -1){
         return -1;
-	}
+    }
     if (n == 0){
         return 0;
     }
