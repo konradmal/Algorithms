@@ -49,14 +49,14 @@ bool isAnagramCount(string str1, string str2){
 
 int main() {
     cout << isAnagram("listen", "silent") << endl;
-	cout << isAnagram("angel", "glean") << endl;
-	cout << isAnagram("brags", "grabs") << endl;
+    cout << isAnagram("angel", "glean") << endl;
+    cout << isAnagram("brags", "grabs") << endl;
     
     cout << isAnagramBubbleSort("listen", "silent") << endl;
-	cout << isAnagramBubbleSort("angel", "glean") << endl;
-	cout << isAnagramBubbleSort("brags", "grabs") << endl;
+    cout << isAnagramBubbleSort("angel", "glean") << endl;
+    cout << isAnagramBubbleSort("brags", "grabs") << endl;
 
     cout << isAnagramCount("listen", "silent") << endl;
-	cout << isAnagramCount("angel", "glean") << endl;
-	cout << isAnagramCount("brags", "grabs") << endl;
+    cout << isAnagramCount("angel", "glean") << endl;
+    cout << isAnagramCount("brags", "grabs") << endl;
 }
