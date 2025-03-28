@@ -1,6 +1,8 @@
+#O(1)
 def f(x: float) -> float:
     return 2*x*x*x - 2*x - 8    #1.7963
 
+#(logn)
 def bisection_method_iterative(start: float, end: float, tolerance: float) -> float:
     if f(start) * f(end) > 0:
         return None
@@ -17,6 +19,7 @@ def bisection_method_iterative(start: float, end: float, tolerance: float) -> fl
 
 print(bisection_method_iterative(0, 5, 0.0001))
 
+#(logn)
 def bisection_method_recursive(start: float, end: float, tolerance: float) -> float:
     if f(start) * f(end) > 0:
         return None

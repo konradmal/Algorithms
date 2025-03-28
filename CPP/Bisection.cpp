@@ -2,10 +2,12 @@
 
 using namespace std;
 
+//O(1)
 double f(double x){
 	return 2*x*x*x-2*x-8;	//1.7963
 }
 
+//(logn)
 double bisectionMethodIterative(double start, double end, double tolerance) {
     if (f(start) * f(end) > 0) {
         return start - 1;
@@ -25,6 +27,7 @@ double bisectionMethodIterative(double start, double end, double tolerance) {
     return midpoint;
 }
 
+//(logn)
 double bisectionMethodRecursive(double start, double end, double tolerance) {
     double midpoint = (start + end) / 2;
     if (f(start) * f(end) > 0) {
