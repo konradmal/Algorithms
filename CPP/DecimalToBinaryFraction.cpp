@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//O(n)
 string decimalToBinaryFraction(double fraction, int limit) {
     string binary_fractional_part = "0.";
     while (fraction > 0 && limit--) {
@@ -17,6 +18,7 @@ string decimalToBinaryFraction(double fraction, int limit) {
     return binary_fractional_part;
 }
 
+//O(n)
 string decimalToBinaryFractionRecursive(double fraction, int limit, string binary_fractional_part = "0.") {
     if (limit == 0 || fraction == 0.0) {
         return binary_fractional_part;
@@ -31,8 +33,6 @@ string decimalToBinaryFractionRecursive(double fraction, int limit, string binar
 }
 
 int main() {
-    string binary_number = decimalToBinaryFraction(0.8, 10);
-    cout << binary_number << endl;
-    string binary_number_recursive = decimalToBinaryFractionRecursive(0.8, 10);
-    cout << binary_number_recursive << endl;
+    cout << decimalToBinaryFraction(0.8, 10) << endl;
+    cout << decimalToBinaryFractionRecursive(0.8, 10) << endl;
 }
