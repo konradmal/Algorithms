@@ -3,12 +3,13 @@
 
 using namespace std;
 
-vector<int> changeGreedy(int amount, int denominations[], int size_of_array){
+//O(amount * num_coins)
+vector<int> changeGreedy(int amount, int coins[], int num_coins){
     vector<int> change;
-    for(int i = 0; i < size_of_array; i++){
-        while(denominations[i] <= amount){
-            change.push_back(denominations[i]);
-            amount -= denominations[i];
+    for(int i = 0; i < num_coins; i++){
+        while(coins[i] <= amount){
+            change.push_back(coins[i]);
+            amount -= coins[i];
         }
     }
     return change;

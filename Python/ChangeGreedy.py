@@ -1,3 +1,4 @@
+#O(amount * len(denominations))
 def change_greedy(amount: int, denominations: list) -> list:
     change = []
     for denomination in denominations:
