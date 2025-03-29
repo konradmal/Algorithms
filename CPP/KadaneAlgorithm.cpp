@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//O(n)
 int kadaneAlgorithm(vector<int> nums) {
     int maxSum = nums[0];
     int currentSum = maxSum;

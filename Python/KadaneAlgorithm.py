@@ -1,3 +1,4 @@
+#O(n)
 def kadane_algorithm(nums: list):
     max_sum = current_sum = nums[0]
     for num in nums[1:]:
