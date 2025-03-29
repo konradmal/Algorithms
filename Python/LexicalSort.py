@@ -6,6 +6,7 @@ class Student:
     def display_info(self):
         print(f"{self.surname} : {self.average_grade}")
 
+#O(n^2)
 def sort_students_lexically(students: list) -> None:
     count = len(students)
     for i in range(count):
@@ -15,7 +16,6 @@ def sort_students_lexically(students: list) -> None:
                 students[j].average_grade > students[j + 1].average_grade)):
                 students[j], students[j + 1] = students[j + 1], students[j]
 
-# Example usage
 students = [
     Student("A", 4.25),
     Student("H", 3.37),

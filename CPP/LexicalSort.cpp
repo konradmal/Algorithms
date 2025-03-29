@@ -19,6 +19,7 @@ public:
     }
 };
 
+//O(n^2)
 void sortStudentsLexically(Student students[], int count) {
     for (int i = 0; i < count; i++) {
         for (int j = 0; j < count - i - 1; j++) {
