@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//O(logn)
 int gcdIterativeOptimized(int a, int b){
     while (b){
         int tmp = a;
@@ -14,6 +15,7 @@ int gcdIterativeOptimized(int a, int b){
     return a;
 }
 
+//O(logn)
 int gcdRecursiveOptimized(int a, int b){
     if (!b){
         return a;
@@ -21,11 +23,13 @@ int gcdRecursiveOptimized(int a, int b){
     return gcdRecursiveOptimized(b, a % b);
 }
 
+//O(logn)
 int lcm_using_gcd(int a, int b){
     // return a * b / gcdIterativeOptimized(a, b);
     return a * b / gcdRecursiveOptimized(a, b);
 }
 
+//O(sqrt(n))
 vector<int> factorizeEfficientVector(int number){
     vector<int> factors;
     while (number % 2 == 0){
@@ -44,6 +48,7 @@ vector<int> factorizeEfficientVector(int number){
     return factors;
 }
 
+//O(sqrt(n))
 int lcmUsingPrimeFactors(int a, int b){
     vector<int> factors_a = factorizeEfficientVector(a);
     vector<int> factors_b = factorizeEfficientVector(b);

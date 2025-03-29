@@ -1,13 +1,16 @@
+#O(logn)
 def gcd_iterative_optimized(a: int, b: int) -> int:
     while b:
         a, b = b, a % b
     return a
 
+#O(logn)
 def gcd_recursive_optimized(a: int, b: int) -> int:
     if b:
         return gcd_recursive_optimized(b, a % b)
     return a
 
+#O(logn)
 def lcm_using_gcd(a: int, b: int) -> int:
     # return a * b // gcd_iterative_optimized(a, b)
     return a * b // gcd_recursive_optimized(a, b) 
@@ -15,6 +18,7 @@ def lcm_using_gcd(a: int, b: int) -> int:
 print(lcm_using_gcd(12, 18))
 print(lcm_using_gcd(28, 32))
 
+#O(sqrt(n))
 def factorize_efficient_list(number: int) -> list:
     factors = []
     while number % 2 == 0:
@@ -30,6 +34,7 @@ def factorize_efficient_list(number: int) -> list:
         factors.append(number)
     return factors
 
+#O(sqrt(n))
 def lcm_using_prime_factors(a: int, b: int) -> int:
     factors_a = factorize_efficient_list(a)
     factors_b = factorize_efficient_list(b)
