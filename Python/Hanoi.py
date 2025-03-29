@@ -1,3 +1,4 @@
+#O(2^n)
 def Hanoi(n: int, A: str, B: str, C: str) -> None:
     if n > 0:
         Hanoi(n-1, A, C, B)
