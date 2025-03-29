@@ -2,6 +2,7 @@
 #include <algorithm>
 using namespace std;
 
+//O(n^2)
 void insertionSort(int arr[], int n) {
     int j;
     for (int i = 1; i < n; i++) {
