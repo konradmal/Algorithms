@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n)
 int gcdIterativeUnoptimized(int a, int b){
     while (a != b){
         if(a > b){
@@ -14,6 +15,7 @@ int gcdIterativeUnoptimized(int a, int b){
     return a;
 }
 
+//O(n)
 int gcdRecursiveUnoptimized(int a, int b){
     if (a == b){
         return a;
@@ -24,6 +26,7 @@ int gcdRecursiveUnoptimized(int a, int b){
     return gcdRecursiveUnoptimized(a, b - a);
 }
 
+//O(logn)
 int gcdIterativeOptimized(int a, int b){
     while (b){
         int tmp = a;
@@ -33,6 +36,7 @@ int gcdIterativeOptimized(int a, int b){
     return a;
 }
 
+//O(logn)
 int gcdRecursiveOptimized(int a, int b){
     if (!b){
         return a;
