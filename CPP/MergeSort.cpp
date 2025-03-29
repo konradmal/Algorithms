@@ -2,6 +2,8 @@
 using namespace std;
 
 int temp[] = {3, 8, 17, 99, 2, 10, 77};
+
+//O(n)
 void merge(int arr[], int left, int mid, int right) {
     int i = left;
     int j = mid + 1;
@@ -17,6 +19,7 @@ void merge(int arr[], int left, int mid, int right) {
     }
 }
 
+//O(nlogn)
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
         int mid = (left + right) / 2;

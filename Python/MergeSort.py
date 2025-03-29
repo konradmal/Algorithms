@@ -1,3 +1,4 @@
+#O(n)
 def merge(arr: list, left: int, mid: int, right: int):
     temp = [0] * (right + 1)
     i, j = left, mid + 1
@@ -17,6 +18,7 @@ def merge(arr: list, left: int, mid: int, right: int):
             arr[k] = temp[i]
             i += 1
 
+#O(nlogn)
 def merge_sort(arr: list, left: int, right: int):
     if left < right:
         mid = (left + right) // 2
