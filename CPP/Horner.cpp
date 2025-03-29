@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n)
 double hornerIterative(double coeffs[], int degree, double x) {
     double result = coeffs[0];
     for (int i = 1; i <= degree; i++) {
@@ -10,6 +11,7 @@ double hornerIterative(double coeffs[], int degree, double x) {
     return result;
 }
 
+//O(n)
 double hornerRecursive(double coeffs[], int degree, double x) {
     if (degree == 0) {
         return coeffs[0];
