@@ -1,6 +1,8 @@
+#O(1)
 def f(x: float) -> float:
     return 2*x*x+x+2
 
+#O(n)
 def rectangular_integral(a: int, b: int, n: int) -> float:
     h = (b - a) / n
     area = 0.0
@@ -12,6 +14,7 @@ def rectangular_integral(a: int, b: int, n: int) -> float:
 
 print(rectangular_integral(2, 5, 1000))
 
+#O(n)
 def trapezoidal_integral(a: int, b: int, n: int) -> float:
     h = (b - a) / n
     area = 0.0

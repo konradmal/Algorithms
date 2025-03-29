@@ -2,10 +2,12 @@
 #include <iomanip>
 using namespace std;
 
+//O(1)
 double f(double x) {
     return 2 * x * x + x + 2;
 }
 
+//O(n)
 double rectangularIntegral(int a, int b, int n) {
     double h = (b - a) / static_cast<double>(n);
     double area = 0.0;
@@ -17,6 +19,7 @@ double rectangularIntegral(int a, int b, int n) {
     return area * h;
 }
 
+//O(n)
 double trapezoidalIntegral(int a, int b, int n) {
     double h = (b - a) / static_cast<double>(n);
     double area = 0.0;
