@@ -1,3 +1,4 @@
+#O(capacity*len(values))
 def knapsack_max_value(capacity: int, weights: list, values: list) -> int:
     dpTable = [[0 for _ in range(capacity + 1)] for _ in range(len(values) + 1)]
     for i in range(1, len(values) + 1):

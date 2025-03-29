@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//O(capacity*numItems)
 int KnapsackMaxValue(int capacity, int weights[], int values[], int numItems) {
     vector<vector<int>> dp(numItems + 1, vector<int>(capacity + 1, 0));
     for (int i = 1; i <= numItems; i++) {
