@@ -1,3 +1,4 @@
+#O(n)
 def partition(tab: list, l: int, p: int) -> int:
     pivot = tab[p]
     i = l - 1
@@ -8,6 +9,7 @@ def partition(tab: list, l: int, p: int) -> int:
     tab[i+1], tab[p] = tab[p], tab[i+1]
     return i + 1
 
+#O(nlogn)
 def quick_sort(tab: list, l: int, p: int):
     if l < p:
         pivot = partition(tab, l, p)

@@ -2,6 +2,7 @@
 #include <algorithm>
 using namespace std;
 
+//O(n)
 int partition(int tab[], int l, int p) {
     int pivot = tab[p];
     int i = l - 1;
@@ -15,6 +16,7 @@ int partition(int tab[], int l, int p) {
     return i + 1;
 }
 
+//O(nlogn)
 void quickSort(int tab[], int l, int p) {
     if (l < p) {
         int pivot = partition(tab, l, p);
