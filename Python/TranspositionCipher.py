@@ -1,3 +1,4 @@
+#O(n)
 def transposition_cipher(text: str) -> str:
     text_as_list = list(text)
     for i in range(0, len(text_as_list) - 1, 2):

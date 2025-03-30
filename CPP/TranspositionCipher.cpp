@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+//O(n)
 string transpositionCipher(string text) {
     string swapped = "";
     for (int i = 0; i < text.length() - 1; i += 2) {
