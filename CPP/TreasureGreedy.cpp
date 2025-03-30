@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//O(m*n)
 vector<vector<int>> generateTreasureMap(int m, int n) {
     vector<vector<int>> board(m, vector<int>(n));
     srand(time(0));
@@ -19,9 +20,9 @@ vector<vector<int>> generateTreasureMap(int m, int n) {
     return board;
 }
 
+//O(m*n)
 int treasureGreedy(int m, int n) {
     vector<vector<int>> board = generateTreasureMap(m, n);
-    
     cout << "Generated board:" << endl;
     for (const vector<int>& row : board) {
         for (int cell : row) {
