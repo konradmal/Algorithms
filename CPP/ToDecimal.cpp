@@ -2,6 +2,7 @@
 #include <cmath>
 using namespace std;
 
+//O(n)
 int toDecimal(string number, int base) {
     int result = 0;
     for (int i = 0, power = number.length() - 1; i < number.length(); i++, power--) {
@@ -20,6 +21,7 @@ int toDecimal(string number, int base) {
     return result;
 }
 
+//O(n)
 int toDecimalInt(int number, int base) {
     int result = 0;
     int power = 0;

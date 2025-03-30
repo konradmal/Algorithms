@@ -1,3 +1,4 @@
+#O(n)
 def to_decimal(number: str, base: int) -> int:
     result = 0
     power = len(number) - 1
@@ -17,6 +18,7 @@ print(to_decimal("33", 6))
 print(to_decimal("EA", 16))
 print(to_decimal("ea", 16))
 
+#O(n)
 def to_decimal_int(number: int, base: int) -> int:
     result = 0
     power = 0
