@@ -1,3 +1,4 @@
+#O(n)
 def min_max(values: list) -> tuple:
     min_value = values[0]
     max_value = values[0]
