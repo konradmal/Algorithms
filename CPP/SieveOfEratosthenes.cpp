@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//O(nlogn)
 void sieveOfEratosthenes(int start, int end){
     bool *primes = new bool[end + 1];
     for(int i = 0; i <= end; i++){
@@ -28,6 +29,7 @@ void sieveOfEratosthenes(int start, int end){
     delete [] primes;
 }
 
+//O(nlogn)
 vector<int> sieveOfEratosthenesList(int start, int end){
     vector<int> primeList;    
     bool *primes = new bool[end + 1];

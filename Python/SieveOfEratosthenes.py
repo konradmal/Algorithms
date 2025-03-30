@@ -1,3 +1,4 @@
+#O(nlogn)
 def sieve_of_eratosthenes(start: int, end: int) -> None:
     primes = (end + 1) * [True]
     primes[0] = primes[1] = False
@@ -13,6 +14,7 @@ def sieve_of_eratosthenes(start: int, end: int) -> None:
 
 sieve_of_eratosthenes(20, 353)
 
+#O(nlogn)
 def sieve_of_eratosthenes_list(start: int, end: int) -> list:
     prime_list = []
     primes = (end + 1) * [True]
