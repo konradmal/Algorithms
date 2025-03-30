@@ -1,3 +1,4 @@
+#O(logn)
 def sqrt_newton_raphson(number: float, tolerance: float) -> float:
     approx_low = 1.0
     approx_high = number

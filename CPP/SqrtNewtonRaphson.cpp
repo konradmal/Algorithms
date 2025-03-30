@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//O(logn)
 double sqrtNewtonRaphson(double number, double tolerance) {
     double lowerApprox = 1;
     double upperApprox = number;
