@@ -49,15 +49,15 @@ int factorialRecursive(int number){
 }
 
 int main() {
-	cout << sumIterative(5) << endl;
-	cout << sumIterative(10) << endl;
+    cout << sumIterative(5) << endl;
+    cout << sumIterative(10) << endl;
 	
-	cout << sumRecursive(5) << endl;
-	cout << sumRecursive(10) << endl;
+    cout << sumRecursive(5) << endl;
+    cout << sumRecursive(10) << endl;
 	
-	cout << factorialIterative(5) << endl;
-	cout << factorialIterative(10) << endl;
+    cout << factorialIterative(5) << endl;
+    cout << factorialIterative(10) << endl;
 	
-	cout << factorialRecursive(5) << endl;
-	cout << factorialRecursive(10) << endl;
+    cout << factorialRecursive(5) << endl;
+    cout << factorialRecursive(10) << endl;
 }
