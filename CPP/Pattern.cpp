@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n*m)
 bool containsPattern(string text, string pattern) {
     for (int i = 0; i < text.length(); i++) {
         int j = 0;
@@ -14,7 +15,6 @@ bool containsPattern(string text, string pattern) {
     }
     return false;
 }
-
 
 int main() {
 	cout << containsPattern("environment", "men") << endl;
