@@ -1,3 +1,4 @@
+#O(1)
 def triangle_type(side1: float, side2: float, side3: float) -> str:
     if not (side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1):
         return "Cannot form a triangle"

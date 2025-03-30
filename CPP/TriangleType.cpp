@@ -3,6 +3,7 @@
 #include <algorithm>
 using namespace std;
 
+//O(1)
 string triangleType(double side1, double side2, double side3) {
     if (!(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1)) {
         return "Cannot form a triangle";
