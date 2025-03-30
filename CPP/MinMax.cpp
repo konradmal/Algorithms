@@ -36,11 +36,11 @@ vector<int> minMaxVector(int array[], int length) {
 }
 
 int main() {
-	int tab[] = {22, 34, 12, 9, 55, 33, 23};
-	int MIN, MAX;
+    int tab[] = {22, 34, 12, 9, 55, 33, 23};
+    int MIN, MAX;
     int size_of_array = sizeof(tab) / sizeof(tab[0]);
-	minMax(tab, size_of_array, MIN, MAX);
-	cout << "Minimum: " <<  MIN << " Maximum: " << MAX << endl;
+    minMax(tab, size_of_array, MIN, MAX);
+    cout << "Minimum: " <<  MIN << " Maximum: " << MAX << endl;
 
     vector<int> result = minMaxVector(tab, size_of_array);
     cout << "Minimum: " <<  result[0] << " Maximum: " << result[1] << endl;
