@@ -1,3 +1,4 @@
+#O(n)
 def is_palindrome(word: str) -> bool:
     return word == word[::-1]
 
@@ -5,6 +6,7 @@ print(is_palindrome("radar"))
 print(is_palindrome("racecar"))
 print(is_palindrome("rotator"))
 
+#O(n)
 def is_palindrome_iterative(word: str) -> bool:
     start = 0
     end = len(word) - 1
@@ -19,6 +21,7 @@ print(is_palindrome_iterative("radar"))
 print(is_palindrome_iterative("racecar"))
 print(is_palindrome_iterative("rotator"))
 
+#O(n)
 def is_palindrome_recursive(word: str, start: int, end: int) -> bool:
     if start >= end:
         return True
@@ -30,6 +33,7 @@ print(is_palindrome_recursive("radar", 0, len("radar") - 1))
 print(is_palindrome_recursive("racecar", 0, len("racecar") - 1))
 print(is_palindrome_recursive("rotator", 0, len("rotator") - 1))
 
+#O(n)
 def is_palindrome_recursive_simple(word: str) -> bool:
     if len(word) <= 1:
         return True

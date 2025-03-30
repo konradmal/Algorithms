@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n)
 bool isPalindrome(string word) {
     int left = 0;
     int right = word.length() - 1;
@@ -14,6 +15,7 @@ bool isPalindrome(string word) {
     return true;
 }
 
+//O(n)
 bool isPalindromeRecursive(string word, int left, int right) {
     if (left >= right)
         return true;
