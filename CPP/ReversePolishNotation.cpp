@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//O(n)
 int reversePolishNotation(string expression) {
     stack<int> stack;
     for (int i = 0; i < expression.length(); i++) {
