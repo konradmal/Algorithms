@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//O(sqrt(n))
 bool isPerfectNumber(int number){
     if(number <= 1){
         return false;

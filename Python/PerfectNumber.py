@@ -1,3 +1,4 @@
+#O(sqrt(n))
 def is_perfect_number(number: int) -> bool:
     if number <= 1:
         return False
