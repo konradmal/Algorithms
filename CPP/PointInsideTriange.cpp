@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//O(1)
 bool pointInsideTriangle(double Ax, double Ay, double Bx, double By, double Cx, double Cy, double Dx, double Dy) {
     if (((Dy - Ay) * (Bx - Ax) > (By - Ay) * (Dx - Ax) &&
         (Dy - By) * (Cx - Bx) > (Cy - By) * (Dx - Bx) &&
@@ -10,7 +11,6 @@ bool pointInsideTriangle(double Ax, double Ay, double Bx, double By, double Cx, 
         (Dy - Cy) * (Ax - Cx) < (Ay - Cy) * (Dx - Cx))){
     return true;
     }
-        
     return false;
 }
 

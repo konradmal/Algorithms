@@ -1,3 +1,4 @@
+#O(1)
 def point_inside_triangle(Ax, Ay, Bx, By, Cx, Cy, Dx, Dy):
     if (((Dy - Ay) * (Bx - Ax) > (By - Ay) * (Dx - Ax) and
          (Dy - By) * (Cx - Bx) > (Cy - By) * (Dx - Bx) and
