@@ -2,6 +2,7 @@
 #include <algorithm>
 using namespace std;
 
+//O(n^2)
 void selectionSort(int tab[], int n) {
     for (int i = 0; i < n; i++) {
         int mini = i;

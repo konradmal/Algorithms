@@ -1,3 +1,4 @@
+#O(n^2)
 def selection_sort(tab: list) -> None:
     for i in range(len(tab)):
         mini = i
