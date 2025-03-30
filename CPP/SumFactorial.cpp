@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(n)
 int sumIterative(int number){
     if(number < 0){
         return -1;
@@ -13,6 +14,7 @@ int sumIterative(int number){
     return total_sum;
 }
 
+//O(n)
 int sumRecursive(int number){
     if(number < 0){
         return -1;
@@ -23,6 +25,7 @@ int sumRecursive(int number){
     return number + sumRecursive(number - 1);
 }
 
+//O(n)
 int factorialIterative(int number){
     if(number < 0){
         return -1;
@@ -34,6 +37,7 @@ int factorialIterative(int number){
     return result;
 }
 
+//O(n)
 int factorialRecursive(int number){
     if(number < 0){
         return -1;

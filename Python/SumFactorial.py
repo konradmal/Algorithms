@@ -1,3 +1,4 @@
+#O(n)
 def sum_iterative(number: int) -> int:
     if number < 0:
         return -1
@@ -9,6 +10,7 @@ def sum_iterative(number: int) -> int:
 print(sum_iterative(5))
 print(sum_iterative(10))
 
+#O(n)
 def sum_recursive(number: int) -> int:
     if number < 0:
         return -1
@@ -19,6 +21,7 @@ def sum_recursive(number: int) -> int:
 print(sum_recursive(5))
 print(sum_recursive(10))
 
+#O(n)
 def factorial_iterative(number: int) -> int:
     if number < 0:
         return -1
@@ -30,6 +33,7 @@ def factorial_iterative(number: int) -> int:
 print(factorial_iterative(5))
 print(factorial_iterative(10))
 
+#O(n)
 def factorial_recursive(number: int) -> int:
     if number < 0:
         return -1
