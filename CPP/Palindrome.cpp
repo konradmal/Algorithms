@@ -25,11 +25,11 @@ bool isPalindromeRecursive(string word, int left, int right) {
 }
 
 int main() {
-	cout << isPalindrome("radar") << endl;
-	cout << isPalindrome("racecar") << endl;
-	cout << isPalindrome("rotator") << endl;
+    cout << isPalindrome("radar") << endl;
+    cout << isPalindrome("racecar") << endl;
+    cout << isPalindrome("rotator") << endl;
 
-	cout << isPalindromeRecursive("radar", 0, 4) << endl;
-	cout << isPalindromeRecursive("racecar", 0, 6) << endl;
-	cout << isPalindromeRecursive("rotator", 0, 6) << endl;
+    cout << isPalindromeRecursive("radar", 0, 4) << endl;
+    cout << isPalindromeRecursive("racecar", 0, 6) << endl;
+    cout << isPalindromeRecursive("rotator", 0, 6) << endl;
 }
