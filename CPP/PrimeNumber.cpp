@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//O(n)
 bool isPrime(int number){
     if (number <= 1){
         return false;
@@ -15,6 +16,7 @@ bool isPrime(int number){
     return true;
 }
 
+//O(sqrt(n))
 bool isPrimeOptimized(int number){
     if (number <= 1){
         return false;
@@ -27,6 +29,7 @@ bool isPrimeOptimized(int number){
     return true;
 }
 
+//O(sqrt(n))
 bool isPrimeMoreOptimized(int number){
     if (number <= 1){
         return false;
@@ -45,6 +48,7 @@ bool isPrimeMoreOptimized(int number){
     return true;
 }
 
+//O(sqrt(n))
 bool isPrimeRecursive(int number, int divisor = 3) {
     if (number <= 1) {
         return false;
