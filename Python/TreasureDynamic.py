@@ -1,11 +1,13 @@
 import random
 
+#O(m*n)
 def generate_treasure_map(m: int, n: int) -> int:
     board = [[random.randint(-10, 20) for _ in range(n)] for _ in range(m)]
     board[0][0] = 0
     board[m-1][n-1] = 0
     return board
 
+#O(m*n)
 def treasure_dynamic(m, n):
     board = generate_treasure_map(m, n)
     print("Generated board:")
