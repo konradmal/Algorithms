@@ -1,3 +1,4 @@
+#O(n)
 def narcissistic_number(number: int) -> bool:
     digits = []
     original_number = number

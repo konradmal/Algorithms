@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 
+//O(n)
 bool narcissisticNumber(int number) {
     vector<int> digits;
     int originalNumber = number;
@@ -12,8 +13,8 @@ bool narcissisticNumber(int number) {
     }
     int numDigits = digits.size();
     int sumOfPowers = 0;
-    for (int digit : digits) {
-        sumOfPowers += pow(digit, numDigits);
+    for (int i=0; i < digits.size(); i++) {
+        sumOfPowers += pow(digits[i], numDigits);
     }
     return originalNumber == sumOfPowers;
 }
