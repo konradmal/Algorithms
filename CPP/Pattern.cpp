@@ -17,7 +17,7 @@ bool containsPattern(string text, string pattern) {
 }
 
 int main() {
-	cout << containsPattern("environment", "men") << endl;
-	cout << containsPattern("history", "story") << endl;
-	cout << containsPattern("teacher", "each") << endl;
+    cout << containsPattern("environment", "men") << endl;
+    cout << containsPattern("history", "story") << endl;
+    cout << containsPattern("teacher", "each") << endl;
 }
