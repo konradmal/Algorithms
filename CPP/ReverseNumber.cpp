@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//O(n)
 int reverseNumber(int number) {
     int reversed = 0;
     while (number != 0) {

@@ -1,3 +1,4 @@
+#O(n)
 def reverse_number(number: int) -> int:
     reversed_number = 0
     while number != 0:
